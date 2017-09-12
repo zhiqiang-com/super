@@ -12,7 +12,7 @@
 </head>
 <body>
 <form>
-   <input type="text" id="name">
+    <input type="text" id="name">
     <input type="password" id="pwd">
 </form>
 </body>
