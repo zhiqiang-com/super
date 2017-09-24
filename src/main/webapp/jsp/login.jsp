@@ -39,8 +39,8 @@
 </script>
 <body>
 <form id="ff" action="postLogin" >
-    账号：<input type="text" id="name"><br/>
-    密码：<input type="password" id="pwd"><br/>
+    账号：<input type="text" id="name" name="name"><br/>
+    密码：<input type="password" id="password" name="password"><br/>
     <input type="submit" value="denglu" id="b1" />
 </form>
 

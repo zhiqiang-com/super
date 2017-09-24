@@ -80,7 +80,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-  <select id="getUserByName" parameterType="string" resultMap="userMap">
+  <select id="getUserByName" parameterType="string" resultMap="BaseResultMap">
     <!-- 此处写sql语句,#{Mapper类传入的参数} -->
     select * from user where name = #{name}
   </select>
