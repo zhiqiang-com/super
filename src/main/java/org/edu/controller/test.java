@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class test {
     @RequestMapping("/testSSM")
     public String testSsm() {
-        return "test/test";
+        return "test/success";
     }
 
 //    @RequestMapping("/login")

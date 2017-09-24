@@ -38,10 +38,10 @@
 
 </script>
 <body>
-<form id="ff" action="postLogin" >
-    账号：<input type="text" id="name"><br/>
-    密码：<input type="password" id="pwd"><br/>
-    <input type="submit" value="denglu" id="b1" />
+<form id="ff" action="/postLogin"  method="post"  >
+    账号：<input type="text"  name="name"><br/>
+    密码：<input type="password"  name="password"><br/>
+    <input type="submit" value="登录" id="b1" />
 </form>
 
 </body>
