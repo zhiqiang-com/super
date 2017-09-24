@@ -12,33 +12,10 @@
 </head>
 
 <script type="text/javascript">
-//            function submitForm() {
-//                alert(">>>>");
-//                $('#ff').form('submit', {
-//                    url: "/loginpost",
-//                    type: "post",
-//                    success: function (r) {
-//                        $.messager.progress('close');
-//                        if (r == null) return;
-//                        r = $.parseJSON(r);
-//                        if (r.success){
-//                            $.messager.alert("提示", r.message, "info", function () {
-//                                window.location.href="/Create";
-//                            });
-//                        }else {
-//                            $.messager.alert("提示",r.message);
-//                        }
-//                    }
-//                });
-//            }
-//            function clearForm(){
-//                $('#ff').form('clear');
-//            }
-
 
 </script>
 <body>
-<form id="ff" action="/postLogin"  method="post"  >
+<form id="ff" action="/doLogin"  method="post"  >
     账号：<input type="text"  name="name"><br/>
     密码：<input type="password"  name="password"><br/>
     <input type="submit" value="登录" id="b1" />

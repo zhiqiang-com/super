@@ -120,8 +120,6 @@
   <listener>
     <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
   </listener>
-
-
   <!-- spring mvc servlet-->
   <servlet>
     <servlet-name>SpringMVC</servlet-name>
