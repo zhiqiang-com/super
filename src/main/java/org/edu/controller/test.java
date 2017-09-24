@@ -11,14 +11,14 @@ public class test {
         return "test/test";
     }
 
-    @RequestMapping("/login")
-    public String testLogin() {
-        return "login";
-    }
-
-    @RequestMapping("/postLogin")
-    public  String login(){
-        System.out.println( "SUCCESS!");
-        return  "test/SUCCESS";
-    }
+//    @RequestMapping("/login")
+//    public String testLogin() {
+//        return "login";
+//    }
+//
+//    @RequestMapping("/postLogin")
+//    public  String login(){
+//        System.out.println( "SUCCESS!");
+//        return  "test/SUCCESS";
+//    }
 }

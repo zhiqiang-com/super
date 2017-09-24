@@ -3,7 +3,7 @@ package org.edu.model;
 public class User {
     private Integer id;
 
-    private String loginid;
+    private String name;
 
     private String password;
 
@@ -17,12 +17,12 @@ public class User {
         this.id = id;
     }
 
-    public String getLoginid() {
-        return loginid;
+    public String getName() {
+        return name;
     }
 
-    public void setLoginid(String loginid) {
-        this.loginid = loginid == null ? null : loginid.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
     }
 
     public String getPassword() {
