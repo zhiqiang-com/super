@@ -15,4 +15,10 @@ public class test {
     public String testLogin() {
         return "login";
     }
+
+    @RequestMapping("/postLogin")
+    public  String login(){
+        System.out.println( "SUCCESS!");
+        return  "test/SUCCESS";
+    }
 }

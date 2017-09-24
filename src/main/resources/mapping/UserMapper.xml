@@ -79,4 +79,10 @@
       type = #{type,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getUserByName" parameterType="string" resultMap="userMap">
+    <!-- 此处写sql语句,#{Mapper类传入的参数} -->
+    select * from T_USER where username = #{username}
+  </select>
+
 </mapper>

@@ -3,15 +3,7 @@ package org.edu.service;
 import org.edu.model.User;
 
 public interface UserService {
-    int deleteByPrimaryKey(Integer id);
 
-    int insert(User record);
-
-    int insertSelective(User record);
-
-    User selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(User record);
-
-    int updateByPrimaryKey(User record);
+    // 通过用户名及密码核查用户登录
+    public User checkLogin(String username, String password);
 }
