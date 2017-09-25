@@ -1,9 +1,9 @@
-package org.edu.util;
+package org.edu.utils;
 
 
 import org.apache.log4j.Logger;
 
-public class log4JHelp {
+public final  class log4JHelp {
     // 构造记录器,形参是记录器所在的类,表示要在该类做日志
     private static Logger logger = Logger.getLogger(log4JHelp.class);
 

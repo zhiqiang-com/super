@@ -4,6 +4,7 @@ import org.edu.dao.UserMapper;
 import org.edu.exception.UserException;
 import org.edu.model.User;
 import org.edu.service.UserService;
+import org.edu.utils.SHA1;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,7 +18,14 @@ public class UserServiceimpl implements UserService {
     @Resource
     public UserMapper userDao;
 
+
     public User checkLogin(User loginUser) {
+
+
+//           String key =new SHA1().sign(loginUser.getPassword());
+//           loginUser.setPassword(key);
+
+
         //根据用户名实例化用户对象
         User user = userDao.getUserByName(loginUser.getName());
 

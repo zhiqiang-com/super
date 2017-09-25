@@ -1,4 +1,4 @@
-package org.edu.util;
+package org.edu.utils;
 
 /**
  * Created by 16041 on 2017/4/16.

@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 import org.edu.exception.UserException;
 import org.edu.model.User;
 import org.edu.service.UserService;
-import org.edu.util.log4JHelp;
+import org.edu.utils.log4JHelp;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
