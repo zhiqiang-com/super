@@ -138,7 +138,7 @@
   </servlet-mapping>
 
   <welcome-file-list>
-    <welcome-file>jsp/user/login.jsp</welcome-file>
+    <welcome-file>indes.jsp</welcome-file>
   </welcome-file-list>
 
   <!-- session配置 -->
