@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,7 +27,7 @@
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"> <a href="User-SC.jsp">收藏</a> </li>
 	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="News.jsp">消息中心</a></li>
        <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="PublicGoods.jsp">商品分类</a></li>
-        <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="Shop_cart.jsp">我的购物车<b>(23)</b></a></li>
+       <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="Shop_cart.jsp">我的购物车<b>(23)</b></a></li>
 	  </ul>
 	</div>
     </div>
@@ -94,9 +96,9 @@
 				<ul>
 					<li><a href="#" target="_blank"><div style="background:url(Demo/AD/ad-1.jpg) no-repeat; background-position:center; width:100%; height:450px;"></div></a></li>
 					<li><a href="#" target="_blank"><div style="background:url(Demo/AD/ad-2.jpg) no-repeat; background-position:center ; width:100%; height:450px;"></div></a></li>
-					<li><a href="#" target="_blank"><div style="background:url(AD/ad-3.jpg) no-repeat rgb(226, 155, 197); background-position:center; width:100%; height:475px;"></div></a></li>
-                    <li><a href="#" target="_blank"><div style="background:url(AD/ad-7.jpg) no-repeat #f7ddea; background-position:center; width:100%; height:450px;"></div></a></li>
-                    <li><a href="#" target="_blank"><div style="background:url(AD/ad-6.jpg) no-repeat  #F60; background-position:center; width:100%; height:450px;"></div></a></li>
+					<li><a href="#" target="_blank"><div style="background:url(Demo/AD/ad-1.jpg) no-repeat rgb(226, 155, 197); background-position:center; width:100%; height:475px;"></div></a></li>
+                    <li><a href="#" target="_blank"><div style="background:url(Demo/AD/ad-2.jpg) no-repeat #f7ddea; background-position:center; width:100%; height:450px;"></div></a></li>
+                    <li><a href="#" target="_blank"><div style="background:url(Demo/AD/ad-1.jpg) no-repeat  #F60; background-position:center; width:100%; height:450px;"></div></a></li>
 				</ul>
 			</div>
 			<!-- 下面是前/后按钮-->
@@ -157,7 +159,7 @@
 						</dl>
 						<dl class="clearfix" data-tpc="2">
 							<dt><a href="#">男装<i>></i></a></dt>
-							<dd><a href="#">原创设计款/a><a href="#">风格潮店</a><a href="#">卫衣</a><a href="#">夹克</a></dd>
+							<dd><a href="#">原创设计款</a><a href="#">风格潮店</a><a href="#">卫衣</a><a href="#">夹克</a></dd>
 							<dd> <a href="#">明星网红</a><a href="#">牛仔外套</a><a href="#">外套</a><a href="#">西装</a></dd>
 							<dd><a href="#">套装</a><a href="#">开衫</a><a href="#">呢大衣</a><a href="#">运动裤</a></dd>
 							<dd> <a href="#">阔腿裤</a><a href="#">马甲</a><a href="#">棉衣</a><a href="#">牛仔裤</a></dd>
@@ -226,7 +228,7 @@
 	 <div class="hd_sort_list">
 		 <dl class="clearfix" data-tpc="1">
 			 <dt><a href="#">童装玩具<i>></i></a></dt>
-			 <dd><a href="#">童装新款</a><a href="#">女装外套</a><a href="#">早教/a><a href="#">学习用品</a></dd>
+			 <dd><a href="#">童装新款</a><a href="#">女装外套</a><a href="#">早教</a><a href="#">学习用品</a></dd>
 			 <dd><a href="#">演出服</a><a href="#">遮阳帽</a><a href="#">遥控模型</a><a href="#">玩具</a></dd>
 			 <dd><a href="#">新生儿礼服</a><a href="#">亲子装</a><a href="#">户外玩具</a><a href="#">电动童车</a></dd>
 			 <dd><a href="#">连衣裙</a><a href="#">学步鞋</a><a href="#">积木</a><a href="#">儿童自行车</a></dd>
@@ -540,172 +542,113 @@
             <div class="slideBoxs">
                 <a class="sPrev" href="javascript:void(0)"></a>
                 <ul>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_11.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">乐事 无限薯片三连装（原味+番茄+烤肉）104g*3/组</a>
-                        <h3><b>￥</b>23.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_12.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">干果（巴旦木  碧根果 开心果 夏威夷果）  104g*7/组</a>
-                        <h3><b>￥</b>110.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_13.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">新疆脆枣   无核真空包装250克/包 </a>
-                        <h3><b>￥</b>20.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_15.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">和田玉 枣</a>
-                        <h3><b>￥</b>30.00</h3>
-                        </div>
-                    </li>
+					<c:if test="${listG==null || fn:length(listG) == 0}">
+						<tr>
+							<td colspan="4">初始化失败</td>
+						</tr>
+					</c:if>
+					<c:forEach items="${listG}" var="item" varStatus="status">
+						<c:if test="${item.type eq '4' }">
+							<li>
+							<div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/${item.picture}" /></a></div>
+							<div class="title">
+							<a href="#" target="_blank" class="name">${item.title}</a>
+							<h3><b>￥</b>${item.price}</h3>
+							</div>
+							</li>
+						</c:if>
+					</c:forEach>
                 </ul>
                 <a class="sNext" href="javascript:void(0)"></a>
             </div><!-- slideBox End -->
 
             <div class="slideBoxs">
                 <a class="sPrev" href="javascript:void(0)"></a>
-                <ul>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_16.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">枸里香正宗宁夏中宁枸杞500克</a>
-                        <h3><b>￥</b>19.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_17.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">有机小米</a>
-                        <h3><b>￥</b>30.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_34.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">6月香  豆瓣酱800克</a>
-                        <h3><b>￥</b>20.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_58.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">芒果干</a>
-                        <h3><b>￥</b>23.00</h3>
-                        </div>
-                    </li>
+                <ul >
+					<c:if test="${listG==null || fn:length(listG) == 0}">
+						<tr>
+							<td colspan="4">初始化失败</td>
+						</tr>
+					</c:if>
+					<c:forEach items="${listG}" var="item" varStatus="status">
+						<c:if test="${item.type eq '5' }">
+							<li>
+								<div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/${item.picture}" /></a></div>
+								<div class="title">
+									<a href="#" target="_blank" class="name">${item.title}</a>
+									<h3><b>￥</b>${item.price}</h3>
+								</div>
+							</li>
+						</c:if>
+					</c:forEach>
                 </ul>
                 <a class="sNext" href="javascript:void(0)"></a>
             </div><!-- slideBox End -->
 
             <div class="slideBoxs">
                 <a class="sPrev" href="javascript:void(0)"></a>
+
                 <ul>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_57.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">奶香饼干</a>
-                        <h3><b>￥</b>40.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_56.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">白色恋人</a>
-                        <h3><b>￥</b>50.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_54.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">果冻</a>
-                        <h3><b>￥</b>10.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_55.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">皇冠曲奇</a>
-                        <h3><b>￥</b>52.00</h3>
-                        </div>
-                    </li>
+					<c:if test="${listG==null || fn:length(listG) == 0}">
+						<tr>
+							<td colspan="4">初始化失败</td>
+						</tr>
+					</c:if>
+					<c:forEach items="${listG}" var="item" varStatus="status">
+						<c:if test="${item.type eq '6' }">
+							<li>
+								<div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/${item.picture}" /></a></div>
+								<div class="title">
+									<a href="#" target="_blank" class="name">${item.title}</a>
+									<h3><b>￥</b>${item.price}</h3>
+								</div>
+							</li>
+						</c:if>
+					</c:forEach>
                 </ul>
                 <a class="sNext" href="javascript:void(0)"></a>
             </div><!-- slideBox End -->
                 <div class="slideBoxs">
                 <a class="sPrev" href="javascript:void(0)"></a>
                 <ul>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_50.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">巧克力</a>
-                        <h3><b>￥</b>102.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_51.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">巧克力</a>
-                        <h3><b>￥</b>50.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_52.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">夏威夷果仁牛轧糖</a>
-                        <h3><b>￥</b>67.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="#" target="_blank"><img src="Demo/products/p_53.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">牛奶糖</a>
-                        <h3><b>￥</b>41.00</h3>
-                        </div>
-                    </li>
+					<c:if test="${listG==null || fn:length(listG) == 0}">
+						<tr>
+							<td colspan="4">初始化失败</td>
+						</tr>
+					</c:if>
+					<c:forEach items="${listG}" var="item" varStatus="status">
+						<c:if test="${item.type eq '7' }">
+							<li>
+								<div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/${item.picture}" /></a></div>
+								<div class="title">
+									<a href="#" target="_blank" class="name">${item.title}</a>
+									<h3><b>￥</b>${item.price}</h3>
+								</div>
+							</li>
+						</c:if>
+					</c:forEach>
                 </ul>
                 <a class="sNext" href="javascript:void(0)"></a>
             </div><!-- slideBox End -->
                 <div class="slideBoxs">
                 <a class="sPrev" href="javascript:void(0)"></a>
                 <ul>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_15.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">和田玉 枣</a>
-                        <h3><b>￥</b>30.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_17.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">有机小米</a>
-                        <h3><b>￥</b>30.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_16.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">枸里香正宗宁夏中宁枸杞500克</a>
-                        <h3><b>￥</b>23.00</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/p_19.jpg" /></a></div>
-                        <div class="title">
-                        <a href="#" target="_blank" class="name">肉肉</a>
-                        <h3><b>￥</b>20.00</h3>
-                        </div>
-                    </li>
+					<c:if test="${listG==null || fn:length(listG) == 0}">
+						<tr>
+							<td colspan="4">初始化失败</td>
+						</tr>
+					</c:if>
+					<c:forEach items="${listG}" var="item" varStatus="status">
+						<c:if test="${item.type eq '8' }">
+							<li>
+								<div class="pic"><a href="Product_detailed.jsp" target="_blank"><img src="Demo/products/${item.picture}" /></a></div>
+								<div class="title">
+									<a href="#" target="_blank" class="name">${item.title}</a>
+									<h3><b>￥</b>${item.price}</h3>
+								</div>
+							</li>
+						</c:if>
+					</c:forEach>
                 </ul>
                 <a class="sNext" href="javascript:void(0)"></a>
             </div><!-- slideBox End -->
@@ -732,51 +675,32 @@
 
 </div>
 <div class="Plate_product">
-<ul id="lists">
-<li class="product_display">
-<a href="User-SC.jsp" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/images/01.jpg" width="140" height="140"/></a>
-<a href="Product-detailed(YS).jsp" class="name">2015新茶  江苏省镇江市特产 </a>
-<h3><b>￥</b>30.99元</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_46.jpg" width="140" height="140"/></a>
-<a href="#" class="name">舒达源</a>
-<h3><b>￥</b>34.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_41.jpg" width="140" height="140"/></a>
-<a href="Product-detailed(YS).jsp" class="name">开国大典</a>
-<h3><b>￥</b>68.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_40.jpg" width="140" height="140"/></a>
-<a href="Product-detailed(YS).jsp" class="name">泸州老窖</a>
-<h3><b>￥</b>54.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
+<ul id="lists1">
+	<c:if test="${listG==null || fn:length(listG) == 0}">
+		<tr>
+			<td colspan="4">初始化失败</td>
+		</tr>
+	</c:if>
+	<c:forEach items="${listG}" var="item" varStatus="status">
+
+		<c:if test="${item.type eq '0' }">
+			<tr >
+
+				<li class="product_display">
+					<a href="User-SC.jsp" class="Collect"><em></em>收藏</a>
+					<a href="#" class="img_link"><img src="Demo/products/${item.picture}" width="140" height="140"/></a>
+					<a href="Product-detailed(YS).jsp" class="name">${item.title}</a>
+					<h3><b>￥</b>${item.price}元</h3>
+					<div class="Detailed">
+						<div class="content">
+							<p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
+						</div>
+					</div>
+				</li>
+			</tr>
+		</c:if>
+
+	</c:forEach>
 </ul>
 </div>
 </div>
@@ -789,52 +713,34 @@
 
 </div>
 <div class="Plate_product">
-<ul id="lists">
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_15.jpg" width="140" height="140"/></a>
-<a href="#" class="name">和田玉 枣</a>
-<h3><b>￥</b>30.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_13.jpg" width="140" height="140"/></a>
-<a href="#" class="name">新疆脆枣   无核真空包装250克/包</a>
-<h3><b>￥</b>20.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_12.jpg" width="140" height="140"/></a>
-<a href="#" class="name">干果（巴旦木  碧根果 开心果 夏威夷果）</a>
-<h3><b>￥</b>110.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_11.jpg" width="140" height="140"/></a>
-<a href="#" class="name">干果</a>
-<h3><b>￥</b>34.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-</ul>
+		<ul id="lists2">
+
+			<c:if test="${listG==null || fn:length(listG) == 0}">
+				<tr>
+					<td colspan="4">初始化失败</td>
+				</tr>
+			</c:if>
+			<c:forEach items="${listG}" var="item" varStatus="status">
+
+				<c:if test="${item.type eq '1' }">
+					<tr >
+
+						<li class="product_display">
+							<a href="User-SC.jsp" class="Collect"><em></em>收藏</a>
+							<a href="#" class="img_link"><img src="Demo/products/${item.picture}" width="140" height="140"/></a>
+							<a href="Product-detailed(YS).jsp" class="name">${item.title}</a>
+							<h3><b>￥</b>${item.price}元</h3>
+							<div class="Detailed">
+								<div class="content">
+									<p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
+								</div>
+							</div>
+						</li>
+					</tr>
+			</c:if>
+
+			</c:forEach>
+		</ul>
 </div>
 </div>
 <div class="Plate_column Plate_column_left">
@@ -845,51 +751,33 @@
 
 </div>
 <div class="Plate_product">
-<ul id="lists">
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_21.jpg" width="140" height="140"/></a>
-<a href="#" class="name">三都港</a>
-<h3><b>￥</b>30.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_25.jpg" width="140" height="140"/></a>
-<a href="#" class="name">龙虾</a>
-<h3><b>￥</b>34.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_22.jpg" width="140" height="140"/></a>
-<a href="#" class="name">新疆羔羊    送礼霸气</a>
-<h3><b>￥</b>100.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_24.jpg" width="140" height="140"/></a>
-<a href="#" class="name">皮皮虾</a>
-<h3><b>￥</b>60.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
+<ul id="lists3">
+
+	<c:if test="${listG==null || fn:length(listG) == 0}">
+		<tr>
+			<td colspan="4">初始化失败</td>
+		</tr>
+	</c:if>
+	<c:forEach items="${listG}" var="item" varStatus="status">
+
+		<c:if test="${item.type eq '2' }">
+			<tr >
+
+				<li class="product_display">
+					<a href="User-SC.jsp" class="Collect"><em></em>收藏</a>
+					<a href="#" class="img_link"><img src="Demo/products/${item.picture}" width="140" height="140"/></a>
+					<a href="Product-detailed(YS).jsp" class="name">${item.title}</a>
+					<h3><b>￥</b>${item.price}元</h3>
+					<div class="Detailed">
+						<div class="content">
+							<p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
+						</div>
+					</div>
+				</li>
+			</tr>
+		</c:if>
+
+	</c:forEach>
 </ul>
 </div>
 </div>
@@ -902,51 +790,33 @@
 
 </div>
 <div class="Plate_product">
-<ul id="lists">
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_31.jpg" width="140" height="140"/></a>
-<a href="#" class="name">招牌拌饭酱</a>
-<h3><b>￥</b>25.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_32.jpg" width="140" height="140"/></a>
-<a href="#" class="name">自然鲜  酱油</a>
-<h3><b>￥</b>12.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_33.jpg" width="140" height="140"/></a>
-<a href="#" class="name">抹茶粉</a>
-<h3><b>￥</b>34.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
-<li class="product_display">
-<a href="" class="Collect"><em></em>收藏</a>
-<a href="#" class="img_link"><img src="Demo/products/p_37.jpg" width="140" height="140"/></a>
-<a href="#" class="name">海藻精致盐</a>
-<h3><b>￥</b>5.00</h3>
-<div class="Detailed">
-<div class="content">
-  <p class="center"><a href="#" class="Buy_btn">立即购买</a></p>
-  </div>
-</div>
-</li>
+<ul id="lists4">
+
+	<c:if test="${listG==null || fn:length(listG) == 0}">
+		<tr>
+			<td colspan="4">初始化失败</td>
+		</tr>
+	</c:if>
+	<c:forEach items="${listG}" var="item" varStatus="status">
+
+		<c:if test="${item.type eq '3' }">
+			<tr >
+
+				<li class="product_display">
+					<a href="User-SC.jsp" class="Collect"><em></em>收藏</a>
+					<a href="#" class="img_link"><img src="Demo/products/${item.picture}" width="140" height="140"/></a>
+					<a href="Product-detailed(YS).jsp" class="name">${item.title}</a>
+					<h3><b>￥</b>${item.price}元</h3>
+					<div class="Detailed">
+						<div class="content">
+							<p class="center"><a href="Product-detailed(YS).jsp" class="Buy_btn">立即购买</a></p>
+						</div>
+					</div>
+				</li>
+			</tr>
+		</c:if>
+
+	</c:forEach>
 </ul>
 </div>
 </div>
@@ -1040,9 +910,7 @@
 <div class="hotline co-ph">
     <p>版权所有Copyright ©***************</p>
     <p>*ICP备***************号 不良信息举报</p>
-    <p>总机电话：****-*********/194/195/196 客服电话：4000****** 传 真：********
-
-        <a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+    <p>总机电话：****-*********/194/195/196 客服电话：4000****** 传 真：********</p>
 </div>
 </div>
 </div>
@@ -1050,7 +918,7 @@
 <div class="fixedBox">
 <ul class="fixedBoxList">
 <li class="fixeBoxLi user"><a href="#"> <span class="fixeBoxSpan"></span> <strong>消息中心</strong></a> </li>
-<li class="fixeBoxLi cart_bd" style="display:block;" id="cartboxs">
+<li class="fixeBoxLi cart_bd" style="display:block;" id="cartboxs1">
 <p class="good_cart">9</p>
     <span class="fixeBoxSpan"></span> <strong>购物车</strong>
     <div class="cartBox">
@@ -1074,7 +942,7 @@
         </dl>
       </div>
 </li>
-<li class="fixeBoxLi code cart_bd " style="display:block;" id="cartboxs">
+<li class="fixeBoxLi code cart_bd " style="display:block;" id="cartboxs2">
     <span class="fixeBoxSpan"></span> <strong>微信</strong>
     <div class="cartBox">
        <div class="bjfff"></div>
