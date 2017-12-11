@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8e311c1-07fd-43fb-b5b3-f3b9bfdda6ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/FB.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/FB.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/Product_detailed.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/Product_detailed.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-ssm/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/web-ssm/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-ssm/index.jsp" afterPath="$PROJECT_DIR$/target/web-ssm/index.jsp" />
-    </list>
+    <list default="true" id="a8e311c1-07fd-43fb-b5b3-f3b9bfdda6ba" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -214,7 +204,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="288" />
     <option name="y" value="122" />
     <option name="width" value="1578" />
@@ -677,7 +667,7 @@
       <workItem from="1512823236924" duration="134000" />
       <workItem from="1512957938699" duration="3847000" />
       <workItem from="1512965224050" duration="1120000" />
-      <workItem from="1512978861737" duration="574000" />
+      <workItem from="1512978861737" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="添加mybatis测试">
       <created>1505192728065</created>
@@ -763,11 +753,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512693234785</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1">
+      <created>1512979440282</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1512979440282</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84509000" />
+    <option name="totallyTimeSpent" value="84558000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -779,7 +776,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
