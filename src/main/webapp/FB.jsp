@@ -37,7 +37,7 @@
         <div class="search_list">
             <ul>
                 <li class="current"><a href="Products_list.jsp">宝贝</a></li>
-                <li><a href="#">天猫</a></li>
+                <%--<li><a href="#">天猫</a></li>--%>
                 <li><a href="Shop(SY).jsp">店铺</a></li>
             </ul>
         </div>

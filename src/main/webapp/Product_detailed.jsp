@@ -69,7 +69,6 @@ div.zoomDiv {
 }
 div.zoomMask {
 	position: absolute;
-	background: url("images/mask.png") repeat;
 	cursor: move;
 	z-index: 1;
 }
@@ -170,7 +169,7 @@ document.getElementById(bg_div).style.display='none';
 
 <!--头部快捷栏-->
 <div class="clear wrapper header">
-    <div class="logo float-lt" style="margin-right:130px;"><img src="Demo/images/logo.png" width="193" height="97" /></div>
+    <div class="logo float-lt" style="margin-right:130px;"><img src="Demo/images/LOGO.png" width="193" height="97" /></div>
     <div class="search float-lt">
         <div class="search_list">
             <ul>
