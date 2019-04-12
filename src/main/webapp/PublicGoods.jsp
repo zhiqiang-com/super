@@ -45,7 +45,7 @@
            <input name="" type="submit" value="搜 索"  class="Search_btn"/>
         </div>
 	  <div class="clear hotword">热门搜索词：新款连衣裙&nbsp;&nbsp;&nbsp;四件套&nbsp;&nbsp;&nbsp;男鞋&nbsp;&nbsp;&nbsp;女鞋&nbsp;&nbsp;&nbsp;化妆品</div>
-  </div
+  </div>
  <!--购物车样式-->
  <div class="hd_Shopping_list" id="Shopping_list">
    <div class="s_cart"><a href="#">我的购物车</a> <i class="ci-right">&gt;</i><i class="ci-count" id="shopping-amount">0</i></div>
